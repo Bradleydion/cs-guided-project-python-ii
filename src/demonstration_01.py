@@ -17,4 +17,13 @@ Notes:
 
 def last(a, n):
     # Your code here
+    if n == 0:
+        return []
+    elif n > len(a):
+        return 'invalid'
+    return a[-n:]
+
+my_list = [1,2,3,4,5,6,7,8]
+
+print(last(my_list,2))
 
